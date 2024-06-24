@@ -1,0 +1,23 @@
+import os# Imports the os module for interacting with the operating system
+
+
+file = open('Lesson 01 - String.py', 'r')# Opens the file 'Lesson 01 - String.py' in read mode
+content = file.read()# Reads the content of the file
+print(content)# Prints the content of the file
+file.close() # Closes the file
+
+with open('Lesson 02 - Variable.py', 'r') as file:# Opens the file 'Lesson 02 - Variable.py' in read mode using a context manager
+    content = file.read() # Reads the content of the file
+    print(content)# Prints the content of the file
+
+with open('output.txt', 'w')as file: # Opens the file 'output.txt' in write mode using a context manager
+    file.write('First line\n')# Writes 'First line' followed by a newline character to the file
+    file.write('Second line')# Writes 'Second line' to the file
+
+with open('output.txt', 'a') as file:# Opens the file 'output.txt' in append mode using a context manager
+    file.write('Computer Programmer') # Appends 'Computer Programmer' to the file
+
+with open('output.txt' , 'r') as file: # Opens the file 'output.txt' in read mode using a context manager
+    print(file.read())# Reads and prints the content of the file
+
+os.remove('output.txt')# Deletes the file 'output.txt' using the os.remove function
