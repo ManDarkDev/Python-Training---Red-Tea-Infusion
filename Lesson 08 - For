@@ -1,0 +1,38 @@
+#Lesson 8 
+
+#for - Iterates over elements of a sequence or iterable.
+#else - Executes if loop completes without break.
+#len() - Returns number of items in an object.
+#range() - Generates sequence of numbers for looping.
+#break() - Exits the loop before it naturally completes.
+
+
+numbers = [ 0, 1, 2, 3]# - Initializes list 'numbers' with elements 0, 1, 2, 3.
+print(numbers)
+
+for n in numbers:# - Iterates over each element in 'numbers'.
+    print(n)
+for i in range (10):# - Loops ten times, 'i' from 0 to 9.
+    print(i)
+
+my_name = 'Red'# - Assigns the string 'Red' to variable 'my_name'
+print(my_name[0])# - Prints first character of 'my_name'.
+print(len(my_name))# - Prints length of 'my_name
+
+for i in range (len(my_name)): # - len(my_name) returns 3 because there are three characters in the string 'Red'.
+    print(my_name[i])
+
+matrix = []# - Initializes an empty list 'matrix
+for i in range(1,3):# - Loops with 'i' values 1 and 2.
+    for j in range(4):# - Inner loop, 'j' from 0 to 3
+        pair =[i,j] #Creates list 'pair' with current 'i' and 'j
+        matrix.append(pair)
+        print('i=', i, 'j=', j)
+print(matrix)
+
+for i in range (5):# - Loops with 'i' from 0 to 4
+    if i > 2:
+        break
+    print(i)
+else:
+    print('the loop is finished')
