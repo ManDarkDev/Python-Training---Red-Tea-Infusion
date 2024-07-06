@@ -13,7 +13,7 @@ Lesson 30 - Tetris
 #-negatives
 #following along with the video was frustrating to say the least
 #the audio was very low and needs to be turned all the way up with headphones or loud speakers. not ideal. 
-#we'd right a block a code and then have to go back and import or input some other code to make that code valid
+#we'd write a block a code and then have to go back and import or input some other code to make that code valid
 #the videos were slightly out of order, in my opinion
 #i would have introduced the main block and sets earlier in the course
 #all of the lessons worked well except for the tetris and snake game. 
